@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>照見真我｜藉相觀心・自我覺察練習</title>
+  <title>照見真我｜藉相觀心・經典修持工作坊</title>
   <meta name="description" content="藉相觀心，照見內在陰影與本自清淨的自性真我。">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23120f21'/%3E%3Cpath d='M32 10l4.7 13.3L50 28l-13.3 4.7L32 46l-4.7-13.3L14 28l13.3-4.7z' fill='%23d7b76a'/%3E%3Ccircle cx='32' cy='28' r='6' fill='%23120f21'/%3E%3C/svg%3E">
   <style>
@@ -11,8 +11,8 @@
     *{box-sizing:border-box}html{min-height:100%;background:#0d0b17}body{margin:0;min-height:100vh;color:var(--ink);font-family:"Noto Serif TC","Microsoft JhengHei",serif;background:radial-gradient(circle at 15% 10%,#332657 0,transparent 35%),radial-gradient(circle at 90% 72%,#202852 0,transparent 32%),linear-gradient(145deg,#0c0a14,#161024 55%,#0a0d1a);overflow-x:hidden}
     body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.5px);background-size:53px 53px}
     button{font:inherit}.shell{width:min(1160px,calc(100% - 32px));margin:auto;padding:30px 0 48px;position:relative}.top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{letter-spacing:.18em;font-weight:700}.brand span{color:var(--gold)}.note{color:var(--muted);font:14px/1.6 "Microsoft JhengHei",sans-serif}
-    .intro{text-align:center;padding:46px 16px 28px}.eyebrow{color:var(--gold2);font:13px/1.4 "Microsoft JhengHei",sans-serif;letter-spacing:.24em}.intro h1{font-size:clamp(30px,5vw,56px);font-weight:500;letter-spacing:.08em;margin:12px 0}.intro p{max-width:680px;margin:0 auto;color:var(--muted);font:15px/1.9 "Microsoft JhengHei",sans-serif}
-    .controls{text-align:center;margin:20px 0 32px}.action{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.04);border-radius:999px;cursor:pointer;transition:.25s;background:linear-gradient(135deg,var(--gold2),#c49a4c);color:#171221;border:0;padding:14px 32px;font-weight:700;font-size:16px;box-shadow:0 10px 32px rgba(210,170,85,.2)}.action:hover{transform:translateY(-2px)}
+    .intro{text-align:center;padding:46px 16px 28px}.eyebrow{color:var(--gold2);font:13px/1.4 "Microsoft JhengHei",sans-serif;letter-spacing:.24em}.intro h1{font-size:clamp(30px,5vw,54px);font-weight:500;letter-spacing:.08em;margin:12px 0}.intro p{max-width:680px;margin:0 auto;color:var(--muted);font:15px/1.9 "Microsoft JhengHei",sans-serif}
+    .controls{text-align:center;margin:20px 0 32px}.action{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.04);border-radius:999px;cursor:pointer;transition:.25s;background:linear-gradient(135deg,var(--gold2),#c49a4c);color:#171221;border:0;padding:14px 34px;font-weight:700;font-size:16px;box-shadow:0 10px 32px rgba(210,170,85,.2)}.action:hover{transform:translateY(-2px)}
     .hint{display:block;color:var(--muted);font:13px/1.7 "Microsoft JhengHei",sans-serif;margin-top:12px}
     .table{min-height:360px;display:flex;align-items:flex-start;justify-content:center;gap:clamp(14px,3vw,34px);perspective:1200px;padding:12px}
     .card-wrap{display:flex;flex-direction:column;align-items:center;width:clamp(150px,22vw,210px)}
@@ -23,12 +23,11 @@
     .front{z-index:1;opacity:0;transform:rotateY(-88deg);display:grid;place-items:center;background:#d8bd7d;color:#20172c;box-shadow:inset 0 0 0 3px #e9d49d}
     .card.flipped .back{opacity:0;transform:rotateY(88deg);pointer-events:none}
     .card.flipped .front{z-index:3;opacity:1;transform:rotateY(0)}
-    .reversed .front .tarot-art{transform:rotate(180deg)}
     .tarot-art{width:100%;height:100%;object-fit:cover;display:block}
     .art-fallback{display:none;position:absolute;inset:10px;place-items:center;text-align:center;border:1px solid #4c3659;font-size:clamp(36px,7vw,70px)}.art-fallback small{display:block;font-size:13px;margin-top:14px;letter-spacing:.12em}
     .position-tag{text-align:center;color:#181322;background:var(--gold2);font-weight:700;font-size:12px;padding:3px 10px;border-radius:99px;margin-top:12px;letter-spacing:.08em}
     .position-desc{text-align:center;color:var(--gold2);font:12px/1.5 "Microsoft JhengHei",sans-serif;margin-top:6px;max-width:180px}
-    .reading{display:none;grid-template-columns:.9fr 1.1fr;gap:18px;animation:rise .6s ease both;margin-top:20px}
+    .reading{display:none;grid-template-columns:.95fr 1.05fr;gap:18px;animation:rise .6s ease both;margin-top:20px}
     .reading.show{display:grid}
     .panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;backdrop-filter:blur(14px)}
     .panel h2{margin:0 0 16px;font-size:20px;color:var(--gold2);font-weight:500;display:flex;align-items:center;gap:8px}
@@ -39,7 +38,6 @@
     .reading-item{padding:16px 0;border-top:1px solid var(--line)}
     .reading-item:first-of-type{border-top:0;padding-top:0}
     .reading-item h3{font-size:17px;margin:0 0 6px;color:#fff}
-    .tag{font:11px "Microsoft JhengHei",sans-serif;color:#181322;background:var(--gold);padding:3px 8px;border-radius:99px;margin-left:6px}
     .reading-item p{color:#d2cadb;font:14px/1.8 "Microsoft JhengHei",sans-serif;margin:6px 0}
     .question{border-left:2px solid var(--gold);padding-left:12px;margin-top:8px;color:var(--gold2);font:14px/1.7 "Microsoft JhengHei",sans-serif}
     .footer{text-align:center;color:#8d859e;font:13px/1.7 "Microsoft JhengHei",sans-serif;margin-top:34px}
@@ -67,7 +65,7 @@
     <section class="intro">
       <div class="eyebrow">CLEAR THE MIND & SEE THE TRUE NATURE</div>
       <h1>藉相觀心・照見內心陰影</h1>
-      <p>「非關占卜吉凶，牌卡只是一面映照自性的鏡子。」<br>在心中靜默片刻，觀照此刻的拉扯或防衛。盲抽三張牌，看清假我外殼、照破心中掛礙，喚醒自性真我慈悲作主的行動力量。</p>
+      <p>「非關占卜吉凶，牌卡只是一面映照自性的鏡子。」<br>在心中靜默片刻，觀照此刻的拉扯或防衛。盲抽三張牌，看清慣性的保護外殼、照破心中牽掛，喚醒自性真我慈悲作主的行動力量。</p>
     </section>
 
     <div class="controls">
@@ -84,14 +82,14 @@
         <div class="dialogue-box">
           <h3>工作坊深度對話題綱：</h3>
           <ul>
-            <li><strong>對照生活觸發：</strong>【牌位 1】照見的假我面具，最常在日常與誰相處時被激發？</li>
-            <li><strong>心經抽離工夫：</strong>地上有水坐上桌子——在情緒爆發或冷戰前，如何給自己 3 秒抽離？</li>
-            <li><strong>真我慈悲換位：</strong>放下「期待對方先道歉」的執著，本具的自性能指引我做出什麼退讓？</li>
+            <li><strong>對照生活觸發：</strong>【牌位 1】照見的保護外殼，最常在日常與誰相處時被激發？</li>
+            <li><strong>心經抽離工夫：</strong>地上有水坐上桌子——在情緒泛起前，如何給自己 3 秒鐘抽離沉澱？</li>
+            <li><strong>真我慈悲換位：</strong>放下「期待對方先回應」的執著，本具的自性能指引我做出什麼退讓？</li>
           </ul>
         </div>
       </article>
       <article class="panel">
-        <h2><span>✦</span> 牌位反觀提問</h2>
+        <h2><span>✦</span> 牌位反觀引導</h2>
         <div id="details"></div>
       </article>
     </section>
@@ -100,42 +98,42 @@
   </main>
 
 <script>
-const cards=[
-['0','愚者','☀','開放、好奇，也可能正站在未知前感到期待與不安。','你執著於萬無一失的掌控，還是願意信賴自性本具的勇氣？'],
-['I','魔術師','✦','渴望掌握局面，證明自己有能力處理一切。','你是否把精力花在證明給別人看，而忘了向內安定自性？'],
-['II','女祭司','☾','敏銳直覺與向內收斂，有時易化為冷眼旁觀的高牆。','如果先放下冷靜防禦的評判心，你的自性能照見對方的何種脆弱？'],
-['III','皇后','❀','渴望滋養與照顧，也可能因付出未獲感謝而心生委屈。','你能否把無條件的慈悲先給予自己，不再向外討取認同？'],
-['IV','皇帝','♜','尋求絕對的秩序與界線，害怕失控與面子受挫。','哪些強勢的規矩只是假我的防衛？若放下一點權威，關係會如何柔軟？'],
-['V','教皇','⚜','依循傳統、規矩與道德期待，害怕成為標新立異的異端。','哪些是你真心認同的道心，哪些只是為了迎合世俗期待的包袱？'],
-['VI','戀人','♡','面對抉擇與關係牽絆，內心渴望深刻的理解與認同。','放下是非對錯的分別心，哪個選擇更能守護兩人的本心自性？'],
-['VII','戰車','➶','極欲向前突破、克服萬難，但也容易緊繃強勢、用力過度。','在急於爭勝負之前，內在拉扯的兩股情緒是否已經先被安撫？'],
-['VIII','力量','∞','學習以柔克剛，接納本能的衝動與情緒波瀾。','面對暴躁的假我心念，能否少一點苛責，以慈悲之心溫柔馴服？'],
-['IX','隱者','✧','暫離喧鬧向內探索，但需留意是否變相成了封閉冷戰。','這份抽離是為了「澄心滌慮」，還是為了逃避現實的人際責任？'],
-['X','命運之輪','◉','感受到外在人事的起伏無常，因無法掌控而心生浮躁。','明白人間因緣如輪旋轉，你是否能在順逆境中守住如如不動的本心？'],
-['XI','正義','⚖','極度在意公平、是非對錯，容易陷入嚴苛的計較批判。','若同時看懂因果與人性的脆弱，你的公理能否多生出一份包容？'],
-['XII','吊人','▽','身處停滯或委屈奉獻中，可能暗自滋長受害者情結。','轉換視角看，這份暫時的受阻是否正是「借境煉心」的磨刀石？'],
-['XIII','死神','✦','舊有的關係模式或執著面臨結束，心生恐懼與不捨。','你正死守哪一個早已失去生命的假相？願意向過去的防禦告別嗎？'],
-['XIV','節制','≈','調和矛盾與衝突，在極端的情緒中尋求中道。','生活中哪一份過度用力的執著需要微調，好讓心境重歸清淨？'],
-['XV','惡魔','♢','被慾望、面子或習慣牽制，明知受苦卻難以放手。','究竟是外在情境束縛了你，還是假我害怕失去掌控而抓著鎖鏈不放？'],
-['XVI','高塔','ϟ','既有的傲慢或虛假平靜受到衝擊，震盪強烈。','當外在的假面具被無常瓦解，玄關深處那個不生不滅的你失去了什麼？'],
-['XVII','星星','✶','修復希望與信賴，重新看見清澈純淨的靈性方向。','放下心中的恐懼與算計，今天你可以點亮身邊哪一個微小的善念？'],
-['XVIII','月亮','☽','恐懼與猜忌在心中放大，把未知的假相當成了真實。','哪些是客觀發生的事實，哪些是妄心編造出來自我嚇唬的劇本？'],
-['XIX','太陽','☼','光明坦蕩、生氣蓬勃，渴望純真自在的表達。','拋開「做個好人」的沉重包袱，自性本有的喜悅與生命力如何自然流露？'],
-['XX','審判','♬','聽見生命轉化的召喚，反觀過去、重獲新生。','若不再被過去的過錯與舊標籤定義，你願意如何喚醒沉睡的真我？'],
-['XXI','世界','⊕','經歷種種歷練而達本還源，體會圓融無礙的自性具足。','看破紅塵假景的生滅，你願意如何以慈悲愿力融入日常的生活與人倫中？']
+const cards = [
+  ['0','愚者','☀','習慣表現得隨緣無所謂，藉此淡化心中的不確定感。','害怕承擔世俗評價與期待，容易因此放慢了前行的腳步。','喚醒純淨赤誠的心，帶著對自性的信任踏出溫和的第一步。'],
+  ['I','魔術師','✦','習慣展現得面面俱到，希望證明自己有能力照顧所有細節。','容易將心神放在外在的肯定上，忘了先讓心靈安頓沉澱。','善用身邊良善的因緣與能力，主動為同修搭起溫暖的橋樑。'],
+  ['II','女祭司','☾','習慣以沈默與冷靜退後一步，默默在心底築起保護屏障。','內在感受格外細膩，因害怕受傷而選擇暫時保持距離。','回歸玄關清淨觀照，在安靜中以溫柔傾聽同理對方的困境。'],
+  ['III','皇后','❀','習慣扮演照顧大家的大家長，處處替身邊每個人設想周全。','付出許多心力後，心底偶爾會浮現未被理解的孤單與委屈。','以無條件的慈悲善待他人，也溫柔接納自己需要休息的身心。'],
+  ['IV','皇帝','♜','習慣以明確的規矩與要求維繫秩序，希望事情都能順暢運作。','內在渴望安定，深怕秩序被打亂而讓大家感到困擾。','化剛強為守護的願力，以寬厚包容的肩膀給予後學安心力量。'],
+  ['V','教皇','⚜','習慣依循前輩經驗與既定準則，希望做最合適、合乎禮數的安排。','容易過度在意世俗禮節或外界期待，無形中給自己過多重擔。','以真誠的道心化為日常陪伴，用身教傳遞溫暖而非單純講述道理。'],
+  ['VI','戀人','♡','習慣事事以大局和諧為先，盡力照顧到每個人的感受。','在面對不同期待時容易左右為難，心中牽掛太多而難以抉擇。','回歸本心良知的純淨方向，以溫和堅定的語氣表達真誠關懷。'],
+  ['VII','戰車','➶','習慣全力以赴往前衝，急於把道務與事情圓滿完成。','責任心強烈，有時因用力過度而讓身心感到疲憊緊繃。','先調和內心著急的氣息，將這份充沛動力化為細水長流的耐性。'],
+  ['VIII','力量','∞','習慣自己默默扛下壓力，在大家面前展現堅毅的一面。','不習慣展露自身的脆弱，把許多感受悄悄收在心底深處。','以至柔克至剛，先給予自己一份溫柔理解，允許身心自然放鬆。'],
+  ['IX','隱者','✧','習慣在起摩擦時退回自己的安靜空間，避免正面交鋒。','容易把清靜獨處誤當成放下，藉由抽離來撫平受挫的感受。','點亮玄關處的自性明燈，帶著沉澱後的智慧重新走入人群結善緣。'],
+  ['X','命運之輪','◉','習慣隨波逐流，告訴自己這都是順其自然的人事變遷。','當外在環境起伏不定時，內心容易跟著外在因緣忽起忽落。','體會人間一切順逆皆是磨鍊心性的道場，守住如如不動的本心。'],
+  ['XI','正義','⚖','習慣講求是非公理，希望每件事都能清清楚楚、客觀公正。','容易以較高的標準審視人事，在心中反覆衡量付出的多寡。','在情理與制度之間留一份圓融，以體諒與大度化解彼此的界線。'],
+  ['XII','吊人','▽','習慣默默忍耐、為大家退讓承擔，把委屈放在心裡。','容易在付出的過程中感到心累，期待這份心意終能被看見。','轉變心境角度，明白借假修真的真意，讓每一次忍辱都化為甘露。'],
+  ['XIII','死神','✦','習慣守著既有的相處習慣，即使互動卡住了也不輕易改變。','對未知的變化感到不安，捨不得放手過去早已習慣的模式。','溫和地放下過去的成見，騰出心中的空間迎納新的善緣契機。'],
+  ['XIV','節制','≈','習慣調和各方意見，在群體中努力維持平靜祥和的氛圍。','容易為了維持表面和氣，而把真實的想法默默嚥回心裡。','運用自性中道智慧，在溫柔傾聽的同時，也真誠分享心中所思。'],
+  ['XV','惡魔','♢','習慣依賴熟悉的習慣或關係，即使感覺受拘束也暫時妥協。','容易將安全感建立在外在人事物上，生起牽掛與得失之心。','照見五蘊假相本無常住，回到自性本自具足的自在與清安。'],
+  ['XVI','高塔','ϟ','面對突然的變化或誤解時，習慣以強烈的情緒本能做防衛。','將外在的成就與形象認得太真，震盪發生時格外容易受驚動。','明白幻相瓦解正是照見自性的契機，在轉折中找回安定的真我。'],
+  ['XVII','星星','✶','習慣用美好的理想期待大家，希望人事都能和和氣氣。','當現實不如預期時，容易感到失落，在心中默默歎息。','將純淨的善願落實在當下，用一聲真誠的問候為身邊人帶來光亮。'],
+  ['XVIII','月亮','☽','習慣多想一層，容易因旁人的一句話而在心中反覆思索。','容易被浮躁的心思牽引，讓未發生的擔憂放大了心中的不安。','運用行深般若智慧，觀照念頭來去，讓紛擾的泥沙自然沉澱。'],
+  ['XIX','太陽','☼','習慣總是展現熱情開朗的笑容，努力讓周圍的人都安心歡喜。','害怕自己的低落會影響同修，努力撐起陽光的外在形象。','允許自己如實自在，用自性本有的真誠溫暖感染身邊同修。'],
+  ['XX','審判','♬','習慣回想過往的人事經歷，希望大家都能從過去的不足中改進。','容易在心中反覆掛念未完成的遺憾，放不下過去的細節。','敞開心胸接納所有走過的路，給予同修與自己一次重新出發的包容。'],
+  ['XXI','世界','⊕','習慣把所有事情做到圓融無礙，期盼每個細節都無可挑剔。','容易把責任全部背在身上，只要有一點不周全便自我反省過度。','體認因緣和合本自具足，放寬心胸與大眾攜手共成大道。']
 ];
 
-const count=3;
-let drawn=false;
-const table=document.querySelector('#table'), reading=document.querySelector('#reading');
-const posData=[
-  {title:'第一張【面具】', desc:'我習慣戴上什麼假我防衛？', role:'假我面具｜'},
-  {title:'第二張【掛礙】', desc:'這背後需要看破什麼妄執？', role:'看破掛礙｜'},
-  {title:'第三張【自性】', desc:'真我作主的慈悲行動為何？', role:'自性行動｜'}
+const count = 3;
+let drawn = false;
+const table = document.querySelector('#table'), reading = document.querySelector('#reading');
+const posData = [
+  {title:'第一張【面具】', desc:'我習慣戴上什麼保護外殼？', role:'自我保護外殼｜'},
+  {title:'第二張【掛礙】', desc:'這背後有何深層牽掛？', role:'心經觀照點化｜'},
+  {title:'第三張【自性】', desc:'真我作主的慈悲實踐為何？', role:'自性慈悲行動｜'}
 ];
 
 function backs(){
-  table.innerHTML=Array.from({length:count},(_,i)=>`
+  table.innerHTML = Array.from({length:count},(_,i)=>`
     <div class="card-wrap">
       <div class="card">
         <div class="face back"></div>
@@ -146,57 +144,65 @@ function backs(){
     </div>
   `).join('');
   reading.classList.remove('show');
-  drawn=false;
-  document.querySelector('#draw').textContent='靜心抽三張牌';
+  drawn = false;
+  document.querySelector('#draw').textContent = '靜心抽三張牌';
 }
 
 function draw(){
   if(drawn){backs();return}
-  drawn=true;
-  let pool=cards.map((c,index)=>({c,index})), chosen=[];
+  drawn = true;
+  let pool = cards.map((c,index)=>({c,index})), chosen = [];
   for(let i=0;i<count;i++){
-    let n=Math.floor(Math.random()*pool.length), picked=pool.splice(n,1)[0];
-    chosen.push({...picked, rev:Math.random()<.25});
+    let n = Math.floor(Math.random()*pool.length), picked = pool.splice(n,1)[0];
+    chosen.push({...picked}); // 採用全正位
   }
 
   table.querySelectorAll('.card').forEach((el,i)=>{
-    let {c,index,rev}=chosen[i];
-    el.classList.toggle('reversed',rev);
-    let code=String(index).padStart(2,'0');
-    el.querySelector('.front').innerHTML=`
-      <img class="tarot-art" src="./cards/ar${code}.jpg" alt="${c[1]}${rev?'逆位':'正位'}">
-      <div class="art-fallback"><div>${c[2]}<small>${c[1]}${rev?'・逆位':''}</small></div></div>
+    let {c,index} = chosen[i];
+    let code = String(index).padStart(2,'0');
+    el.querySelector('.front').innerHTML = `
+      <img class="tarot-art" src="./cards/ar${code}.jpg" alt="${c[1]}牌面">
+      <div class="art-fallback"><div>${c[2]}<small>${c[1]}</small></div></div>
     `;
-    setTimeout(()=>el.classList.add('flipped'),i*220);
+    setTimeout(()=>el.classList.add('flipped'), i*220);
   });
 
-  setTimeout(()=>showReading(chosen),650+count*220);
-  document.querySelector('#draw').textContent='重新洗牌・再次反觀';
+  setTimeout(()=>showReading(chosen), 650 + count*220);
+  document.querySelector('#draw').textContent = '重新洗牌・再次反觀';
 }
 
 function showReading(chosen){
-  document.querySelector('#summary').innerHTML=`
-    你此時習慣以<strong>「${chosen[0].c[1]}」</strong>作為自我防衛的外殼；<br>
-    然而<strong>「${chosen[1].c[1]}」</strong>提醒你照破深層的我執與恐懼掛礙。<br>
-    當玄關自性真我當家作主，<strong>「${chosen[2].c[1]}」</strong>正引導你踏出慈悲、換位思考的具體行動。
+  const mask = chosen[0], shadow = chosen[1], trueSelf = chosen[2];
+
+  document.querySelector('#summary').innerHTML = `
+    此時此刻，你<strong>習慣以【${mask.c[1]}】作為保護外殼</strong>：${mask.c[3]}<br><br>
+    然而<strong>【${shadow.c[1]}】正提醒你看破深層的牽掛</strong>：${shadow.c[4]}<br><br>
+    當玄關真我當家作主，<strong>【${trueSelf.c[1]}】引領你踏出慈悲的步履</strong>：${trueSelf.c[5]}
   `;
 
-  document.querySelector('#details').innerHTML=chosen.map((x,i)=>`
+  document.querySelector('#details').innerHTML = `
     <div class="reading-item">
-      <h3>${posData[i].role}${x.c[1]} <span class="tag">${x.rev?'能量受阻／逆位':'顯影調和／正位'}</span></h3>
-      <p>${x.rev ? '這股特質此時可能表現為過度防禦、壓抑或失衡，請先承認這份脆弱，不急於自責。' : x.c[3]}</p>
-      <div class="question">
-        <strong>反觀提問：</strong>${posData[i].desc}<br>
-        ✦ ${x.c[4]}
-      </div>
+      <h3>${posData[0].role}${mask.c[1]}</h3>
+      <p>${mask.c[3]}</p>
+      <div class="question"><strong>反觀提問：</strong>在人際相處或家庭日常中，我最常在什麼情境下展現這個保護外殼？</div>
     </div>
-  `).join('');
+    <div class="reading-item">
+      <h3>${posData[1].role}${shadow.c[1]}</h3>
+      <p>${shadow.c[4]}</p>
+      <div class="question"><strong>反觀提問：</strong>這背後我內心真正擔心失去什麼？若把心念抽離放鬆，事情是否真有這麼嚴重？</div>
+    </div>
+    <div class="reading-item">
+      <h3>${posData[2].role}${trueSelf.c[1]}</h3>
+      <p>${trueSelf.c[5]}</p>
+      <div class="question"><strong>反觀提問：</strong>若不再等待外在環境先改變，我今天可以主動做出怎樣的微小善意或退讓？</div>
+    </div>
+  `;
 
   reading.classList.add('show');
   reading.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-document.querySelector('#draw').onclick=draw;
+document.querySelector('#draw').onclick = draw;
 backs();
 </script>
 </body>
