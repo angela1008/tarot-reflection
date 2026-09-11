@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>內在之鏡｜偉特塔羅</title>
+  <meta name="description" content="抽一張或三張偉特塔羅牌，整理此刻的心靈狀態與自我提問。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23120f21'/%3E%3Cpath d='M32 10l4.7 13.3L50 28l-13.3 4.7L32 46l-4.7-13.3L14 28l13.3-4.7z' fill='%23d7b76a'/%3E%3Ccircle cx='32' cy='28' r='6' fill='%23120f21'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#f4eedf;--muted:#b8b0c8;--gold:#d8b66b;--gold2:#f0d59a;--violet:#33295a;--panel:rgba(24,19,42,.78);--line:rgba(216,182,107,.28)}
+    *{box-sizing:border-box}html{min-height:100%;background:#0d0b17}body{margin:0;min-height:100vh;color:var(--ink);font-family:"Noto Serif TC","Microsoft JhengHei",serif;background:radial-gradient(circle at 15% 10%,#332657 0,transparent 35%),radial-gradient(circle at 90% 72%,#202852 0,transparent 32%),linear-gradient(145deg,#0c0a14,#161024 55%,#0a0d1a);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.5px);background-size:53px 53px}
+    button{font:inherit}.shell{width:min(1160px,calc(100% - 32px));margin:auto;padding:30px 0 48px;position:relative}.top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{letter-spacing:.18em;font-weight:700}.brand span{color:var(--gold)}.note{color:var(--muted);font:14px/1.6 "Microsoft JhengHei",sans-serif}
+    .intro{text-align:center;padding:54px 16px 32px}.eyebrow{color:var(--gold2);font:13px/1.4 "Microsoft JhengHei",sans-serif;letter-spacing:.24em}.intro h1{font-size:clamp(34px,6vw,66px);font-weight:500;letter-spacing:.08em;margin:12px 0}.intro p{max-width:620px;margin:0 auto;color:var(--muted);font:16px/1.9 "Microsoft JhengHei",sans-serif}
+    .spread-picker{display:flex;justify-content:center;gap:10px;margin:24px 0}.spread-picker button,.action{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.04);border-radius:999px;padding:11px 20px;cursor:pointer;transition:.25s}.spread-picker button.active{background:var(--gold);color:#171221;border-color:var(--gold);font-weight:700}.action{background:linear-gradient(135deg,var(--gold2),#c49a4c);color:#171221;border:0;padding:14px 28px;font-weight:700;box-shadow:0 10px 32px rgba(210,170,85,.18)}.action:hover{transform:translateY(-2px)}
+    .table{min-height:340px;display:flex;align-items:center;justify-content:center;gap:clamp(14px,3vw,34px);perspective:1200px;padding:12px}.card{width:clamp(150px,22vw,218px);aspect-ratio:2/3;border-radius:13px;position:relative;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.75,.2,1);filter:drop-shadow(0 24px 32px rgba(0,0,0,.38))}.card.flipped{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;border:1px solid rgba(245,215,150,.65);border-radius:13px;overflow:hidden}.back{display:grid;place-items:center;background:repeating-linear-gradient(45deg,rgba(216,182,107,.09) 0 2px,transparent 2px 10px),#241c41;box-shadow:inset 0 0 0 8px #171229,inset 0 0 0 10px var(--gold)}.back:after{content:"✦";display:grid;place-items:center;width:54%;aspect-ratio:1;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-size:45px;box-shadow:0 0 30px rgba(216,182,107,.2)}.front{transform:rotateY(180deg);display:grid;place-items:center;background:#d8bd7d;color:#20172c;box-shadow:inset 0 0 0 3px #e9d49d}.tarot-art{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}.art-fallback{display:none;position:absolute;inset:10px;place-items:center;text-align:center;border:1px solid #4c3659;font-size:clamp(36px,7vw,70px)}.art-fallback small{display:block;font-size:13px;margin-top:14px;letter-spacing:.12em}.reversed .front .tarot-art{transform:rotate(180deg)}.position{text-align:center;color:var(--gold2);font:13px/1.5 "Microsoft JhengHei",sans-serif;letter-spacing:.16em;margin-top:-4px}
+    .controls{text-align:center;margin:10px 0 38px}.hint{display:block;color:var(--muted);font:13px/1.7 "Microsoft JhengHei",sans-serif;margin-top:12px}.reading{display:none;grid-template-columns:.9fr 1.1fr;gap:18px;animation:rise .6s ease both}.reading.show{display:grid}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px;backdrop-filter:blur(14px)}.panel h2{margin:0 0 18px;font-size:22px;color:var(--gold2);font-weight:500}.summary{font:17px/1.9 "Microsoft JhengHei",sans-serif;margin:0}.reading-item{padding:17px 0;border-top:1px solid var(--line)}.reading-item:first-of-type{border-top:0;padding-top:0}.reading-item h3{font-size:18px;margin:0 0 8px}.tag{font:12px "Microsoft JhengHei",sans-serif;color:#181322;background:var(--gold);padding:4px 8px;border-radius:99px;margin-left:7px}.reading-item p,.question{color:#d2cadb;font:15px/1.8 "Microsoft JhengHei",sans-serif;margin:5px 0}.question{border-left:2px solid var(--gold);padding-left:14px}.footer{text-align:center;color:#8d859e;font:13px/1.7 "Microsoft JhengHei",sans-serif;margin-top:34px}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    .card{width:clamp(150px,22vw,210px);aspect-ratio:180/318}.table{min-height:380px}
+    .card.flipped{transform:none}.face{backface-visibility:visible;transition:opacity .28s ease,transform .55s cubic-bezier(.2,.75,.2,1)}.back{z-index:2;opacity:1;transform:rotateY(0)}.front{z-index:1;opacity:0;transform:rotateY(-88deg)}.card.flipped .back{opacity:0;transform:rotateY(88deg);pointer-events:none}.card.flipped .front{z-index:3;opacity:1;transform:rotateY(0)}
+    @media(max-width:720px){.shell{width:min(100% - 20px,1160px);padding-top:18px}.note{display:none}.intro{padding:38px 8px 20px}.intro p{font-size:15px}.table{min-height:320px;gap:8px;padding-inline:0}.card{width:min(29vw,170px)}.reading.show{grid-template-columns:1fr}.panel{padding:20px}.position{font-size:11px;letter-spacing:.08em}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="top"><div class="brand"><span>✦</span> 內在之鏡</div><div class="note">偉特塔羅・自我覺察練習</div></header>
+    <section class="intro">
+      <div class="eyebrow">TAKE A QUIET MOMENT</div>
+      <h1>此刻，你的心在說什麼？</h1>
+      <p>在心中放入一個念頭，慢慢呼吸。讓三張牌陪你看見平常戴上的面具、面具背後需要看破的事，以及真正的你想採取的行動。</p>
+    </section>
+    <section class="table" id="table" aria-live="polite"></section>
+    <div class="controls"><button class="action" id="draw">靜心抽三張牌</button><span class="hint" id="hint">面具・看破・行動</span></div>
+    <section class="reading" id="reading">
+      <article class="panel"><h2>整體心靈氣候</h2><p class="summary" id="summary"></p></article>
+      <article class="panel"><h2>牌面帶來的訊息</h2><div id="details"></div></article>
+    </section>
+    <footer class="footer">解讀僅供娛樂與自我反思，不取代心理、醫療或其他專業協助。</footer>
+  </main>
+<script>
+const cards=[
+['0','愚者','☀','開放、好奇，也可能正站在未知前感到期待與不安。','你願意為哪個新的可能，多相信自己一點？'],
+['I','魔術師','✦','你渴望掌握局面，內在其實已有可用的能力與資源。','此刻你已經擁有、卻還沒好好使用的能力是什麼？'],
+['II','女祭司','☾','你對細微感受格外敏銳，可能需要安靜才能聽清直覺。','如果先不急著解釋，你的感受正在告訴你什麼？'],
+['III','皇后','❀','你需要滋養、被照顧，也有一股想創造與給予的力量。','你能如何讓自己今天過得更柔軟一些？'],
+['IV','皇帝','♜','你在尋找秩序與安全感，可能正努力維持控制。','哪些界線能帶來安定，而不是讓你更加緊繃？'],
+['V','教皇','⚜','你在價值、規範或他人期待間尋找可以依循的方向。','哪些信念是你真心認同，而非只是習慣服從？'],
+['VI','戀人','♡','你的內心正面對關係或價值選擇，渴望一致與連結。','哪個選擇更接近你真正重視的自己？'],
+['VII','戰車','➶','你有向前突破的意志，同時也可能因用力過度而疲憊。','前進之前，哪兩股拉扯需要先被協調？'],
+['VIII','力量','∞','你正在學習溫柔地承接衝動、害怕或不確定。','面對脆弱時，你能否少一點批判、多一點耐心？'],
+['IX','隱者','✧','你可能需要暫離喧鬧，整理出屬於自己的答案。','獨處能替你照亮哪個一直被忽略的需要？'],
+['X','命運之輪','◉','你感受到變化正在發生，內心可能在期待與失控感間擺盪。','有哪些變化無法控制，但你仍能選擇回應方式？'],
+['XI','正義','⚖','你想看清因果並做出公平決定，也可能對自己要求很高。','若同時尊重事實與感受，答案會有何不同？'],
+['XII','吊人','▽','目前的停滯也許是在邀請你換一個角度，而非立刻推進。','暫時放下執著後，你會看見什麼新視角？'],
+['XIII','死神','✦','某個階段正在結束；不捨之外，也有騰出空間的需要。','你準備向哪一種過去道別？'],
+['XIV','節制','≈','你渴望恢復平衡，內在正在慢慢調和矛盾與消耗。','生活中哪一處只需微調，而不必劇烈改變？'],
+['XV','惡魔','♢','你可能被慾望、責任或習慣牽制，卻也開始看見束縛。','哪個「我沒有選擇」其實仍藏著一點選擇？'],
+['XVI','高塔','ϟ','既有信念受到衝擊，震盪之中也逼近更真實的自己。','當表面的穩定鬆動，你最想保住的核心是什麼？'],
+['XVII','星星','✶','你正在修復希望，心裡仍有一處相信事情能慢慢變好。','哪個微小行動能讓希望今天就有落點？'],
+['XVIII','月亮','☽','情緒與想像變得濃烈，未明之處可能放大了焦慮。','哪些是事實，哪些是恐懼替你補上的故事？'],
+['XIX','太陽','☼','你渴望坦率、被看見與自在表達，生命力正準備舒展。','什麼事情能讓你單純地感到有活力？'],
+['XX','審判','♬','你正在回顧過去並聽見改變的召喚，準備重新定義自己。','若不再被舊標籤限制，你想成為怎樣的人？'],
+['XXI','世界','⊕','你感到一段歷程逐漸完整，也需要承認自己走過的路。','你願意如何慶祝這個已經完成的自己？']];
+const count=3;let drawn=false;const table=document.querySelector('#table'),reading=document.querySelector('#reading');
+const positions=['我習慣戴上甚麼面具？','這個面具背後需要看破甚麼？','面具背後真正的我想要做的行動是甚麼？'];
+function backs(){table.innerHTML=Array.from({length:count},(_,i)=>`<div><div class="card"><div class="face back"></div><div class="face front"></div></div><div class="position">${positions[i]}</div></div>`).join('');reading.classList.remove('show');drawn=false;document.querySelector('#draw').textContent='靜心抽三張牌'}
+function draw(){if(drawn){backs();return}drawn=true;let pool=cards.map((c,index)=>({c,index})),chosen=[];for(let i=0;i<count;i++){let n=Math.floor(Math.random()*pool.length),picked=pool.splice(n,1)[0];chosen.push({...picked,rev:Math.random()<.28})}table.querySelectorAll('.card').forEach((el,i)=>{let {c,index,rev}=chosen[i];el.classList.toggle('reversed',rev);let code=String(index).padStart(2,'0');el.querySelector('.front').innerHTML=`<img class="tarot-art" src="./cards/ar${code}.jpg" alt="${c[1]}${rev?'逆位':'正位'}牌面"><div class="art-fallback"><div>${c[2]}<small>${c[1]}${rev?'・逆位':''}</small></div></div>`;setTimeout(()=>el.classList.add('flipped'),i*230)});setTimeout(()=>showReading(chosen),650+count*230);document.querySelector('#draw').textContent='重新洗牌'}
+function showReading(chosen){const moods=chosen.map(x=>x.rev?`你可能正壓抑或過度使用「${x.c[1]}」的能量，需要先允許卡住的感受存在。`:x.c[3]);document.querySelector('#summary').textContent=`你習慣以「${chosen[0].c[1]}」的樣子面對世界，但「${chosen[1].c[1]}」提醒你看穿這層保護背後的需要。當你更靠近真實的自己，「${chosen[2].c[1]}」指出一個可以開始嘗試的行動方向。`;document.querySelector('#details').innerHTML=chosen.map((x,i)=>`<div class="reading-item"><h3>${['面具｜','看破｜','行動｜'][i]}${x.c[1]} <span class="tag">${x.rev?'逆位':'正位'}</span></h3><p>${x.rev?'這份能量可能暫時受阻、被壓抑，或表現得太強烈。先留意自己是否正在迴避真正的需要。':moods[i]}</p><div class="question">${positions[i]}<br>${x.c[4]}</div></div>`).join('');reading.classList.add('show');reading.scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelector('#draw').onclick=draw;backs();
+</script>
+</body>
+</html>
